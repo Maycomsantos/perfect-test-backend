@@ -1,4 +1,15 @@
 <?php return array (
+  'barryvdh/laravel-debugbar' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Barryvdh\\Debugbar\\ServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Debugbar' => 'Barryvdh\\Debugbar\\Facade',
+    ),
+  ),
   'facade/ignition' => 
   array (
     'providers' => 
@@ -31,6 +42,24 @@
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
     ),
   ),
+  'lucascudo/laravel-pt-br-localization' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Lucascudo\\LaravelPtBRLocalization\\LaravelPtBRLocalizationServiceProvider',
+    ),
+  ),
+  'mckenziearts/laravel-notify' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Mckenziearts\\Notify\\LaravelNotifyServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Notify' => 'Mckenziearts\\Notify\\Facades\\LaravelNotify',
+    ),
+  ),
   'nesbot/carbon' => 
   array (
     'providers' => 
@@ -43,6 +72,13 @@
     'providers' => 
     array (
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    ),
+  ),
+  'spatie/laravel-activitylog' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\Activitylog\\ActivitylogServiceProvider',
     ),
   ),
 );

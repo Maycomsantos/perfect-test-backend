@@ -480,6 +480,9 @@ mark,
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
 }
+.items-start {
+    align-items: flex-end;
+}
 
 .initialism {
   font-size: 90%;
