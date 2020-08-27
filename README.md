@@ -1,36 +1,27 @@
- # Você quer ser um desenvolvedor Backend na Perfectpay? 
- O desafio é desenvolver um sistema de vendas onde consiste um cadastro de produtos, o próprio cadastro de vendas onde será preenchido alguns dados também referente a cliente, uma dashboard onde estará
-centralizado os dados de produtos, consulta de vendas e um relatório simplificado de vendas.
+ # Como faz para rodar o projeto ? 
+ Simples, da forma que está atualizado, o importante é ter na sua máquina a versão PHP 7.4.9. No meu caso eu utilizei essa versão e também usei o Xampp como fonte de servidor.
  
- # Instruções
- - O foco principal do nosso teste é o backend. Para facilitar você poderá utilizar os blade.php que disponibilizamos no projeto.
- - Fique à vontade para usar bibliotecas/componentes externos
- - Seguir princípios **CLEAN CODE** 
- - Utilize boas práticas de programação
- - Utilize boas práticas de git
- - Documentar como rodar o projeto
+ 1 - Depois de clonar o projeto, rode o comando: *composer install*, assim irá baixar todas as depedências. 
+ 2 - Se quando baixado não aparecer a versão mais atualizada, mude para a versão mais recente rodando o comando: *composer update*.
  
- # Requisitos
- - O sistema deverá ser desenvolvido utilizando a linguagem PHP no framework Laravel.
- - Você deve criar um CRUD que permita cadastrar as seguintes informações:
- 	- **Produto**: Nome, Descrição e Preço.
- 	- **Venda**: Produto,Data da venda, Quantidade do produto, Desconto, Status da venda.
-	- **Cliente**: Nome, Email, CPF.
- - Salvar as informações necessárias em um banco de dados (relacional) de preferência MySql.
- - Exibir todos os dados na dashboard conforme exemplo deixado na blade.php.
-
+ # Composer e depedências utilizadas
+ Se você acessar o projeto verá que possui um arquivo chamado *composer.json*, nesse arquivo contém todos os detalhes de componentes e arquivos instalados por fora. 
  
- # Opcionais
- - Testes automatizados com informação da cobertura de testes
- - Upload de imagem no cadastro de produtos
+ # Coisas diferentes 
+ O que teve a mais de diferentes só a utilização de componentes X blade. 
  
- # O que será avaliado
- - Estrutura e organização do código e dos arquivos
- - Qualidade
- - Enfim, tudo será observado e levado em conta
+ Que isso reduziu bastante linha de código. Exemplo: 
  
- # Como iniciar o desenvolvimento
- - Fork esse repositório na sua conta do GitHub.
- - Crie uma branch com o nome desafio
+ <input type="text" name="testando" placeholder="testando" class="form-control"></input>
  
- Qualquer dúvida sobre o teste, fique a vontade para entrar em contato conosco.
+ Usando X blade ou Blade X, reduzimos e fica da seguinte forma: 
+ 
+ <x-form.input name="testando" placeholder="testando" />
+ 
+ # Testes 
+ 
+ Fiz pequenos testes na qual pode ser conferido na pasta: *tests/Feature* e *tests/Unit* 
+ 
+ Os testes foram exatamente para verificar se os dados estavam sendo inseridos e as tabelas corretas e visualizar se as views estavam corretas. 
+ 
+ 
